@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rasmus Schønning — Grafisk design</title>
+  <meta name="description" content="Rasmus Schønning, grafisk designer i København. Identitet, udstillingsdesign, print, bøger og websites." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light-bg">
+  <nav class="site-nav">
+    <span class="nav-name">Rasmus Schønning</span>
+    <div class="nav-right">
+      <button class="nav-index-btn" id="indexToggle" type="button">Index</button>
+      <a class="nav-link" href="about.html">About</a>
+    </div>
+  </nav>
+
+  <main class="slideshow" id="slideshow">
+    <div class="slide-frame" id="slideFrame">
+      <!-- slides injected by script.js -->
+    </div>
+    <div class="caption-block">
+      <p class="caption-credit" id="credit"></p>
+    </div>
+    <div class="slide-nav-zone prev" aria-label="Forrige"></div>
+    <div class="slide-nav-zone next" aria-label="Næste"></div>
+  </main>
+
+  <div class="slide-counter" id="counter"></div>
+
+  <section class="index-grid-page" id="indexPage">
+    <div class="index-grid" id="indexGrid">
+      <!-- grid items injected by script.js -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
