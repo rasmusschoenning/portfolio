@@ -259,6 +259,48 @@ const SLIDES = [
     client: "SMK Thy, National Gallery of Denmark",
     photography: "",
   },
+  {
+    src: "images/climada-1.jpg",
+    title: "Climada",
+    designedAt: "Studio Atlant",
+    client: "Climada",
+    photography: "Studio Atlant",
+  },
+  {
+    src: "images/climada-2.jpg",
+    title: "Climada",
+    designedAt: "Studio Atlant",
+    client: "Climada",
+    photography: "Studio Atlant",
+  },
+  {
+    src: "images/climada-3.jpg",
+    title: "Climada",
+    designedAt: "Studio Atlant",
+    client: "Climada",
+    photography: "Studio Atlant",
+  },
+  {
+    src: "images/climada-4.jpg",
+    title: "Climada",
+    designedAt: "Studio Atlant",
+    client: "Climada",
+    photography: "Studio Atlant",
+  },
+  {
+    src: "images/climada-5.jpg",
+    title: "Climada",
+    designedAt: "Studio Atlant",
+    client: "Climada",
+    photography: "Studio Atlant",
+  },
+  {
+    src: "images/climada-6.jpg",
+    title: "Climada",
+    designedAt: "Studio Atlant",
+    client: "Climada",
+    photography: "Studio Atlant",
+  },
 ];
 
 const SLIDE_DURATION = 6000; // ms
@@ -285,10 +327,13 @@ function buildSlides() {
       const video = document.createElement("video");
       video.src = slide.src;
       if (slide.poster) video.poster = slide.poster;
-      video.controls = true;
+      video.controls = false;
       video.muted = true;
       video.playsInline = true;
       video.loop = true;
+      video.autoplay = true;
+      video.disablePictureInPicture = true;
+      video.setAttribute("controlsList", "nodownload noplaybackrate nofullscreen");
       div.appendChild(video);
     } else {
       const img = document.createElement("img");
